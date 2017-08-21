@@ -31,7 +31,7 @@ eventLoop:
 _putch:
     mov word bx, sp
     mov word ax, [bx + 2]
-    mov byte ah, 0x0e
+    mov byte ah, 0xe
     mov byte bh, 0
     mov byte bl, 7
     int 0x10
